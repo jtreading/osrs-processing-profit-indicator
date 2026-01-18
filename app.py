@@ -60,7 +60,8 @@ def calculate_profit(recipe, config):
 
     profit_per_input = effective_output_price - input_price
     profit_per_hour = profit_per_input * processed_per_hour
-
+    
+    print("----------")
     print(f"Buying {input_name} at {input_price} gp.")
     print(f"Selling {output_name} at {output_price_data['high']} gp.")
     return profit_per_hour
@@ -87,7 +88,7 @@ def main():
         if recipe:
             profit = calculate_profit(recipe, config)
             if profit is not None:
-                print(f"Estimated profit for {args.recipe}: {int(profit)} gp/h.")
+                print(f"Estimated profit for {args.recipe}: {int(profit)} gp/{'item' if recipe['processed-per-hour'] == 1 else 'hour'}.")
             else:
                 print(f"Failed to calculate profit for {args.recipe}.")
         else:
