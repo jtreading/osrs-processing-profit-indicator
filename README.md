@@ -28,7 +28,7 @@ python >= 3.10.6
 
 (note: Currently, profit estimation for processing methods only supports one input item and one output item. This may be expanded in a future update.)
 
-Processing:
+##### Processing:
 
 Create a json file under the recipes folder with the following properties defined based on your method:
 
@@ -41,7 +41,7 @@ Create a json file under the recipes folder with the following properties define
 
 Item IDs may be found on the OSRS [Wiki Prices page](https://prices.runescape.wiki) (end of URL).
 
-Flipping:
+##### Flipping:
 
 * Follow the same instructions as for processing, setting input and output item names and IDs to equivalent values and setting `output-per-input` to `1`. Set `processed-per-hour` to `1`. Understand that this will now track profit per item flipped instead of profit per hour of processing.
 
@@ -62,9 +62,3 @@ Selling Revenant ether at 180 gp.
 Estimated profit for bracelet-to-ether: 2033220 gp/h.
 
 ````
-
-# Planned Improvements:
-
-- finish readme
-- make recipe selectable from a list
-- get polling interval from user input
