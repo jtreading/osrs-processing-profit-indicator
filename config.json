@@ -1,0 +1,5 @@
+{
+    "polling-interval": 30,
+    "default-recipe": "bracelet-to-ether",
+    "tax-rate": 0.02
+}
