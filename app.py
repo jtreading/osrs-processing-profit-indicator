@@ -40,7 +40,9 @@ def load_and_validate_recipes(directory):
     return recipes
 
 def calculate_profit(recipe, config):
+    input_name = recipe['input-item-name']
     input_id = recipe['input-item-id']
+    output_name = recipe['output-item-name']
     output_id = recipe['output-item-id']
     output_per_input = recipe['output-per-input']
     processed_per_hour = recipe['processed-per-hour']
@@ -59,6 +61,8 @@ def calculate_profit(recipe, config):
     profit_per_input = effective_output_price - input_price
     profit_per_hour = profit_per_input * processed_per_hour
 
+    print(f"Buying {input_name} at {input_price} gp.")
+    print(f"Selling {output_name} at {output_price_data['high']} gp.")
     return profit_per_hour
 
 def main():

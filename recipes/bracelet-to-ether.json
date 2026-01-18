@@ -1,5 +1,7 @@
 {
+    "input-item-name": "Bracelet of ethereum (uncharged)",
     "input-item-id": 21817,
+    "output-item-name": "Revenant ether",
     "output-item-id": 21820,
     "output-per-input": 250,
     "processed-per-hour": 2884
