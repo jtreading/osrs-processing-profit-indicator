@@ -22,3 +22,4 @@ A command-line tool for tracking real-time profit based on item prices from the 
     - finish readme
     - make recipe selectable from a list
     - get polling interval from user input
+    - show buy and sell prices in output

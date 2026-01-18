@@ -83,7 +83,7 @@ def main():
         if recipe:
             profit = calculate_profit(recipe, config)
             if profit is not None:
-                print(f"Estimated profit per hour for {args.recipe}: {profit:.2f} coins")
+                print(f"Estimated profit per hour for {args.recipe}: {profit:.2f} coins per hour.")
             else:
                 print(f"Failed to calculate profit for {args.recipe}.")
         else:
